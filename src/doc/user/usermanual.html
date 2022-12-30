@@ -7879,7 +7879,7 @@ for doc in results:
 from recoll import recoll, rclextract
 
 qdoc = query.fetchone()
-extractor = recoll.Extractor(qdoc)
+extractor = rclextract.Extractor(qdoc)
 doc = extractor.textextract(qdoc.ipath)
 # use doc.text, e.g. for previewing</pre>
                     <p>Passing <code class=
